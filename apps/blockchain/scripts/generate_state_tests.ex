@@ -151,7 +151,6 @@ defmodule GenerateStateTests do
     test_path
     |> File.read!()
     |> Poison.decode!()
-    |> Enum.map(fn {_name, body} -> body end)
   end
 
   def account_interface(test) do
